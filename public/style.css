@@ -37,7 +37,11 @@ body {background: #fff:}
 
 .pack-info {max-width: 350px;
 						margin: auto;}
-.single-wolf {display: inline-block;}
+
+.single-wolf {display: inline-block;
+							width: 350px;
+							border-style: solid;
+							border-width: 1px;}
 
 .pack-image {width: 23%;
 							margin: 0;}
@@ -45,5 +49,20 @@ body {background: #fff:}
 .wolf-image {width: 100%;
 							margin: 3px;
 							float: left;}
+.pack-name {margin: 0px;
+						max-width: 275px;
+						float: left;}
 
+.pack-name h5 {margin: 0;}
+
+.pack-howl-count {float: right;
+									margin: 0;}
+
+.pack-howl-count h5 {margin: 0;}
+
+.pack-description {margin-bottom: 3px;
+										float: left;
+										clear: right;}
+
+.pack-description h6{margin: 0;}
 
