@@ -1,0 +1,24 @@
+<div class="howlr-header">
+	<h1 class="howlr-text">Howlr</h1>
+</div>
+<% if @wolf.errors.any? %>
+	<% @wolf.errors.full_messages.each do |m| %>
+		<p>Error: <%= m %></p>
+	<% end %>
+<% end %>
+
+<div class="new-howlr-form">
+	<form action="/wolves" method="post">
+
+		<input type="text" name="name" placeholder="Your name?"><hr>
+		<input type="text" name="image" placeholder="Profile Picture URL?"><hr>
+		<input type="text" name="description" placeholder="Short bio?"><hr>
+	 
+	</form>
+</div>
+<div class="new-howlr-submit">
+	<input type="submit" value="Join the Pack" class="btn btn-danger" >
+</div>
+<div class="new-howlr-back">
+	<p><a href="/wolves" class="btn btn-danger">Back</a></p>
+</div>

@@ -1,0 +1,27 @@
+body {background: #fff:}
+
+.howlr-header {max-width: 350px;
+						background: #ee6e73;
+						text-align: center;
+						color: #fff;
+						margin: auto;}
+
+.howlr-text {margin: 0;}
+
+.new-howlr-form{max-width: 350px;
+								margin:auto;
+								margin-top: 15px;}
+
+.new-howlr-form hr{margin-top: 1px;
+									margin-bottom: 1px;}
+
+.new-howlr-form input{width: 100%;
+											border: none;}
+
+.new-howlr-submit {position: relative;
+										left: 52%;
+										top: 14px;}
+
+.new-howlr-back {position: relative;
+									left:0%;
+									top:-20px;}
