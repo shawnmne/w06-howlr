@@ -17,9 +17,9 @@ ActiveRecord::Schema.define(version: 1) do
   enable_extension "plpgsql"
 
   create_table "howls", force: :cascade do |t|
-    t.string   "text"
+    t.string   "text",       null: false
     t.string   "image"
-    t.integer  "wolf_id"
+    t.integer  "wolf_id",    null: false
     t.integer  "like"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 1) do
   create_table "wolves", force: :cascade do |t|
     t.string "name",        null: false
     t.string "image",       null: false
-    t.string "description"
+    t.string "description", null: false
   end
 
 end

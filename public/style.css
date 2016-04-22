@@ -8,6 +8,9 @@ body {background: #fff:}
 
 .howlr-text {margin: 0;}
 
+.new-howlr-error {max-width: 350px;
+									margin: auto;}
+
 .new-howlr-form{max-width: 350px;
 								margin:auto;
 								margin-top: 15px;}
@@ -19,9 +22,28 @@ body {background: #fff:}
 											border: none;}
 
 .new-howlr-submit {position: relative;
-										left: 52%;
-										top: 14px;}
+										left: 62%;
+										top: 14px;
+										max-width: 110px;}
 
 .new-howlr-back {position: relative;
 									left:0%;
-									top:-20px;}
+									top:-20px;
+									max-width: 100px;}
+
+.pack-header {text-align: center;
+							max-width: 350px;
+							margin: auto;}
+
+.pack-info {max-width: 350px;
+						margin: auto;}
+.single-wolf {display: inline-block;}
+
+.pack-image {width: 23%;
+							margin: 0;}
+
+.wolf-image {width: 100%;
+							margin: 3px;
+							float: left;}
+
+
