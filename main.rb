@@ -11,7 +11,7 @@ set :views, Proc.new {File.join(root, "app/views/")}
 enable :method_override
 
 get "/" do
-  erb :home
+  erb :"/howls/index"
 end
 
 get "/pry" do

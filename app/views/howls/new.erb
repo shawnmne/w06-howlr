@@ -19,13 +19,18 @@
 		<h4>Who's howling?</h4>
 
 		<div class="select-howling-wolf">
-		
+			
 			<select name="wolf_id">
-
-				<% @wolves.each do |w| %>
-					<option value="<%= w.id %>"><%= w.name %></option>
+				<% i = 1 %>
+				<% w = Wolf.last.id %>
+				<% until i > w do %>
+					<option value="<%= i %>"><%= Wolf.find_by_id(i).name %></option>
+					<% i += 1 %>
 				<% end %>
 			</select>
+
+
+
 
 		</div>
 		<br>

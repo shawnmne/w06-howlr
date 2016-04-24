@@ -23,4 +23,8 @@ post '/howls' do
   end
 end
 
-
+get '/howls/more' do 
+  @howls = Howl.all 
+  $loop = $loop + 5
+  erb :"howls/previous"
+end
