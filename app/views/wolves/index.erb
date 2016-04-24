@@ -16,7 +16,7 @@
 				<h5><%= w.name %></h5>
 			</div>
 			<div class="pack-howl-count">
-				<h5>0 howls<h5>
+				<h5><%= w.howls.nil?  ? 0 : w.howls.count %> howls<h5>
 			</div>
 			<div class="pack-description">
 				<h6><%= w.description %></h6>

@@ -21,14 +21,20 @@ body {background: #fff:}
 .new-howlr-form input{width: 100%;
 											border: none;}
 
-.new-howlr-submit {position: relative;
-										left: 62%;
-										top: 14px;
+.new-howlr-form h4{float: left;
+										margin: 0;}
+
+.new-howlr-submit {float: right;
+										margin-top: 20px;
 										max-width: 110px;}
 
-.new-howlr-back {position: relative;
-									left:0%;
-									top:-20px;
+.new-howlr-submit-howl {float: right;
+										clear: right;
+										margin-top: 20px;
+										max-width: 110px;}
+
+.new-howlr-back {float: left;
+									margin-top: 20px;
 									max-width: 100px;}
 
 .pack-header {text-align: center;
@@ -69,3 +75,4 @@ body {background: #fff:}
 .to-new-howlr a{float: right;
 							margin-top: 5px;}
 
+.select-howling-wolf {float: right;}

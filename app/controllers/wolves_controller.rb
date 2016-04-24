@@ -1,5 +1,5 @@
 get '/wolves' do
-	@wolves = Wolf.all 			
+	@wolves = Wolf.all			
 	erb :"wolves/index"
 end
 

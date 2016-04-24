@@ -1,0 +1,44 @@
+<div class="howlr-header">
+	<h1 class="howlr-text">Howlr</h1>
+</div>
+
+<div class="new-howlr-error">
+	<% if @howl.errors.any? %>
+		<% @howl.errors.full_messages.each do |m| %>
+			<p>Error: <%= m %></p>
+		<% end %>
+	<% end %>
+</div>
+
+<div class="new-howlr-form">
+	<form action="/howls" method="post">
+
+		<input type="text" name="text" placeholder="What are you howling about?"><hr>
+		<input type="text" name="image" placeholder="Wanna share a picture (optional)?"><hr>
+
+		<h4>Who's howling?</h4>
+
+		<div class="select-howling-wolf">
+		
+			<select name="wolf_id">
+
+				<% @wolves.each do |w| %>
+					<option value="<%= w.id %>"><%= w.name %></option>
+				<% end %>
+			</select>
+
+		</div>
+		<br>
+		<hr>
+
+
+	 	<div class="new-howlr-submit-howl">
+			<input type="submit" value="Howl" class="btn btn-danger" >
+		</div>
+
+	</form>
+	<div class="new-howlr-back">
+		<p><a href="/howls" class="btn btn-danger">Back</a></p>
+	</div>
+
+</div>
