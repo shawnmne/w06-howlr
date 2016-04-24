@@ -1,10 +1,12 @@
 body {background: #fff:}
 
 .howlr-header {max-width: 350px;
-						background: #ee6e73;
 						text-align: center;
-						color: #fff;
 						margin: auto;}
+
+.howlr-header a{width: 100%;
+								background: #ee6e73;
+								font-size: 25px;}
 
 .howlr-text {margin: 0;}
 
@@ -45,21 +47,30 @@ body {background: #fff:}
 						margin: auto;}
 
 .single-wolf {display: inline-block;
-							width: 350px;
+							width: 100%;
 							border-style: solid;
 							border-width: 1px;}
 
-.pack-image {width: 23%;
+.pack-image {width: 19px;
 							margin: 0;}
+
+.pack-info-container {width: 90%;
+											margin: 0;
+											margin-right: 10px;
+											float: left;}
 
 .wolf-image {width: 100%;
 							margin: 3px;
-							float: left;}
+							float: left;
+							border-radius: 50%;}
 .pack-name {margin: 0px;
 						max-width: 275px;
 						float: left;}
 
 .pack-name h5 {margin: 0;}
+
+.pack-image-container {width: 19px;
+							margin: 0;}
 
 .pack-howl-count {float: right;
 									margin: 0;}
@@ -76,3 +87,57 @@ body {background: #fff:}
 							margin-top: 5px;}
 
 .select-howling-wolf {float: right;}
+
+.howl-info {max-width: 350px;
+						margin: auto;}
+
+.need-to-howl {float: left}
+
+.need-to-howl a{margin-top: 15px;}
+
+.see-pack {float: right;}
+
+.see-pack a{margin-top: 15px;}
+
+.howl-info h2{margin-top: 39px;
+							font-size: 25px;
+							margin-left: 5px;
+							margin-right: 5px;
+							text-align: center;}
+
+.wolf-name {float: left;
+						margin-left: 10px}
+
+.wolf-name h3{margin: 0;}
+
+.pack-image-container {width: 19px;
+							margin: 0;
+							float:right;}
+
+.howl-info-container {max-width: 90%;
+											margin: 0;
+											}
+
+.howl-image {width: 100%;
+							margin: 3px;
+							float: right;
+							border-radius: 50%;
+							margin-right: 10px;}
+
+.howl-container {display: inline-block;
+							width: 100%;
+							border-style: solid;
+    						border-color: #ccc;
+    						border-width: 2px;}
+
+ .text-image {margin-left: 10px;}
+
+ .text-image-move {max-width: 100%;}
+
+ .text h5{margin-top: 7px;
+ 					margin-left: 10px;}
+
+
+
+
+

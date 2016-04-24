@@ -1,5 +1,5 @@
 <div class="howlr-header">
-	<h1 class="howlr-text">Howlr</h1>
+	<p><a class="btn btn-danger" href="/howls">Howlr</a></p>
 </div>
 
 <div class="pack-header">	
@@ -12,14 +12,16 @@
 			<div class="pack-image">
 				<img class="wolf-image" src='<%=w.image%>'>
 			</div>
-			<div class="pack-name">
-				<h5><%= w.name %></h5>
-			</div>
-			<div class="pack-howl-count">
-				<h5><%= w.howls.nil?  ? 0 : w.howls.count %> howls<h5>
-			</div>
-			<div class="pack-description">
-				<h6><%= w.description %></h6>
+			<div class="pack-info-container">
+				<div class="pack-name">
+					<h5><%= w.name %></h5>
+				</div>
+				<div class="pack-howl-count">
+					<h5><%= w.howls.nil?  ? 0 : w.howls.count %> howls</h5>
+				</div>
+				<div class="pack-description">
+					<h6><%= w.description %></h6>
+				</div>
 			</div>
 		</div>	
 	<% end %>

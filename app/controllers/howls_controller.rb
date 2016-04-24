@@ -1,5 +1,8 @@
 get '/howls' do
-	@howls = Howl.all 			
+	@howls = Howl.all
+  $loop = 5
+
+
 	erb :"howls/index"
 end
 
