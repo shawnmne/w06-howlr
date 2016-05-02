@@ -1,8 +1,8 @@
 get '/howls' do
-	@howls = Howl.all
-  $loop = 5
-
-
+  params['offset'] = 0 if params['offset'] == nil
+  @offset = params['offset']
+  @howls = Howl.order(id: :desc).offset(@offset).take(5)	
+#  binding.pry
 	erb :"howls/index"
 end
 
@@ -23,8 +23,4 @@ post '/howls' do
   end
 end
 
-get '/howls/more' do 
-  @howls = Howl.all 
-  $loop = $loop + 5
-  erb :"howls/previous"
-end
+

@@ -137,7 +137,12 @@ body {background: #fff:}
  .text h5{margin-top: 7px;
  					margin-left: 10px;}
 
- .see-previous a{margin-top: 20px;}
+ .see-previous {margin-top: 20px;
+ 								float: left;}
+
+  .see-newer {margin-top: 20px;
+ 								float: right;}
+
 
 
 

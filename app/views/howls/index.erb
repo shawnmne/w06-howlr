@@ -11,36 +11,37 @@
 	</div>
 	<br>
 	<h2>Here are the last 5 howls from your pack:</h2>
-	<% howl_id = Howl.last.id %>
-	<% i = 0 %>
-		<% while i < $loop do %>
-			<% if howl_id > 0 %>
+
+		<% @howls.each do |howl| %>
 				<div class="howl-container">
-					<% howl = Howl.find_by_id(howl_id) %>
 					<div class="pack-image-container">
-						<img class="howl-image" src='<%= Wolf.find_by_id(howl.wolf_id).image %>' >
+						<img class="howl-image" src='<%= howl.wolf.image %>' >
 					</div>
 					<div class="howl-info-container">
 						<div class="wolf-name">
-							<h3><%= Wolf.find_by_id(howl.wolf_id).name %></h3>
+							<h3><%= howl.wolf.name %></h3>
 						</div>
-
 						<div class="text-image">
 							<img class="text-image-move" src='<%= howl.image %>'>
 						</div>
 						<br>
 						<div class="text">
-							<h5><%= Howl.find_by_id(howl_id).text %></h5>
+							<h5><%= howl.text %></h5>
 						</div>
 					</div>
-					<% howl_id -= 1 %>
 				</div>	
+		<% end %>	
+			<% if @howls.length >= 5 %>
+			<div class="see-previous">
+					<p><a class="btn btn-danger" href="/howls?offset=<%=@offset.to_i + 5%>" >SEE PREVIOUS HOWLS</a></p>
+			</div>
 			<% end %>
-			<% i += 1 %>
+	<div class="see-newer">
+		<% if @offset != '0' && @offset != 0%>
+		  <p><a class="btn btn-danger" href="/howls?offset=<%=@offset.to_i - 5%>">SEE NEWER HOWLS</a></p>
 		<% end %>
-	<div class="see-previous">
-	<p><a class="btn btn-danger" href="howls/more">See Previous Howls</a></p>
 	</div>
+
 
 
 </div>
